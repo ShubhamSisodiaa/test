@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+>
+    <!-- spring component bean or annotated class definations are   -->
+    <context:component-scan base-package="core.concepts"/>
+
+
+    <!-- bean definitions here for  -->
+    <!--
+        <bean
+            id = "engine1"
+            class= "core.concepts.Engine" >
+        </bean>
+    <bean
+
+        id = "car"
+        class = "core.concepts.Car" >    -->
+        <!-- Below is the information for dependency Injection via setter getter  -->
+    <!--  <property
+      name = "myengine"
+      ref= "engine1" >
+  </property>    -->
+   <!-- Below is the information for dependency Injection via constructor  -->
+    <!-- <constructor-arg ref = "engine1" >
+</constructor-arg>  -->
+<!--
+ </bean> -->
+ </beans>
